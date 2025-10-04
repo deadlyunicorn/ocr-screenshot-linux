@@ -1,0 +1,17 @@
+[package]
+name = "ocr-screenshot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk4 = "0.9"
+gdk4 = "0.9"
+glib = "0.20"
+image = "0.25"
+tesseract = "0.15"
+imageproc = "0.25"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
